@@ -19,6 +19,7 @@ class CreateApuestasTable extends Migration
             $table->double("cuota_1");
             $table->double("cuota_x")->nullable();
             $table->double("cuota_2");
+            $table->string("eleccion");
             $table->double("importe")->nullable();
             $table->date("fecha");
             $table->string("tipo")->nullable();
