@@ -5,23 +5,37 @@
 @endsection
 
 @section("contenido")
-    <div class="row">
+    <div class="row justify-content-center espaciado">
         @foreach( $apuestas as  $apuesta )
-            <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
-                <div class="card text-white bg-info" style="width: auto;">
-                    <a href="{{ route('apuestas.show' , $apuesta->id) }}">
-{{--                        <img class="card-img-top" src="{{asset('storage/img')}}/{{$apuesta->imagen}}"--}}
-{{--                             style="height:400px"/>--}}
-                        vaina
-                    </a>
-                    <div class="card-body">
-                        <h4 class="card-title text-center">{{$apuesta->nombre}}</h4>
+
+            <div class="col-9 mt-3">
+                <div class="card fondoCard">
+                    <div class="d-flex">
+                        <div class="card-body anchoCard">
+                            <h3 class="card-title p-2">{{$apuesta->deporte}}</h3>
+                            <h5 class="card-title p-2">{{$apuesta->nombre}}</h5>
+                        </div>
+
+                        <div class="card-body mr-2 ml-2 cuota">
+                            <h5 class="text-muted text-center mt-4">1</h5>
+                            <h4 class="card-title text-center">{{$apuesta->cuota_1}}</h4>
+                        </div>
+                        <div class="card-body mr-2 cuota">
+                            <h5 class="text-muted text-center mt-4">X</h5>
+                            <h4 class="card-title text-center">{{$apuesta->cuota_x}}</h4>
+                        </div>
+                        <button type="submit" class="btn text-decoration-none">
+                            <div class="card-body cuota">
+                                <h5 class="text-muted text-center mt-4">2</h5>
+                                <h4 class="card-title text-center">{{$apuesta->cuota_2}}</h4>
+                            </div>
+                        </button>
+
+
                     </div>
-                    <ul class="list-group list-group-flush text-dark">
-                        <li class="list-group-item">1 {{$apuesta->cuota_1}}</li>
-                        <li class="list-group-item">X {{$apuesta->cuota_x}}</li>
-                        <li class="list-group-item">2 {{$apuesta->cuota_2}}</li>
-                    </ul>
+                    <div class="card-footer">
+                        <small class="text-muted">{{$apuesta->fecha}}H</small>
+                    </div>
                 </div>
             </div>
         @endforeach

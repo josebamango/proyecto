@@ -10,7 +10,7 @@ class ApuestaController extends Controller
 
     public function index()
     {
-        $apuestas = Apuesta::orderBy('id', 'desc')->paginate();
+        $apuestas = Apuesta::orderBy('deporte', 'desc')->paginate();
         return view("apuestas.index", compact("apuestas"));
     }
 

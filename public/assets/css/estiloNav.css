@@ -10,7 +10,6 @@ body {
     overflow-x: hidden;
     top: 0;
     left: 0;
-    background-color: black;
 }
 
 a {
@@ -115,4 +114,25 @@ ul {
 .dropdown-item:hover {
     background-color: #0a3d62;
     color: white;
+}
+
+
+.espaciado{
+   margin-top: 6em;
+}
+
+.fondoCard{
+   background-color: rgba(10, 61, 98,0.1);
+}
+.anchoCard{
+    width: 18rem;
+}
+
+
+.cuota{
+    background-color: white;
+}
+.cuota:hover{
+    background-color: rgba(231, 76, 60,0.1);
+    cursor: pointer;
 }
