@@ -20,5 +20,8 @@ class DatabaseSeeder extends Seeder
         // \App\Models\User::factory(10)->create();
         DB::table('apuestas')->delete();
         $this->call(ApuestaSeeder::class);
+        DB::table('retos')->delete();
+        $this->call(RetoSeeder::class);
+
     }
 }

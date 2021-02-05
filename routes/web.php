@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ApuestaController;
 use App\Http\Controllers\InicioController;
+use App\Http\Controllers\RetoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,15 +17,22 @@ use App\Http\Controllers\InicioController;
 
 Route::get('/', [InicioController::class, "home"])->name("wachete.home");
 
-Route::get('wachete', [ApuestaController::class, "index"])->name("wachete.index");
+Route::get('apuestas', [ApuestaController::class, "index"])->name("apuestas.index");
 
-Route::get('wachete/crear', [ApuestaController::class, "create"])->name("wachete.create");
+Route::get('retos', [RetoController::class, "index"])->name("retos.index");
 
-Route::get('wachete/{apuesta}', [ApuestaController::class,"show"])->name("wachete.show");
+Route::get('wachete/crear', [RetoController::class, "create"])->name("retos.create");
 
-Route::post('wachete/store', [ApuestaController::class, "store"])->name("wachete.store");
+//Route::get('wachete/{apuesta}', [ApuestaController::class,"show"])->name("re.show");
 
-Route::get('wachete/{apuesta}/editar',[ApuestaController::class, "edit"])->name("wachete.edit");
+Route::post('retos/store', [RetoController::class, "store"])->name("retos.store");
 
-Route::put('wachete/{apuesta}', [ApuestaController::class, 'update'])->name("wachete.update");
+Route::get('reto/{reto}/editar',[RetoController::class, "edit"])->name("retos.edit");
+
+Route::put('wachete/{apuesta}', [ApuestaController::class, 'update'])->name("retos.update");
+
+Route::get('apuestas/futbol', [ApuestaController::class, 'futbol'])->name("apuestas.futbol");
+
+Route::get('apuestas/baloncesto', [ApuestaController::class, 'baloncesto'])->name("apuestas.baloncesto");
+
 

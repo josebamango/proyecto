@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
 html,
 body {
     font-family: "Poppins";
@@ -60,13 +61,13 @@ ul {
     background: #fff;
 }
 
-.navbar-toggler span+span {
+.navbar-toggler span + span {
     margin-top: 4px;
     width: 18px;
     margin-left: 4px;
 }
 
-.navbar-toggler span+span+span {
+.navbar-toggler span + span + span {
     width: 10px;
     margin-left: 10px;
 }
@@ -99,17 +100,21 @@ ul {
     margin-top: -11px;
 }
 
+.editar {
+    background-color: rgba(231, 76, 60, 0.8);
+    color: white;
+
+}
+
 .btn:hover {
     background-color: #0a3d62;
+    color: white;
 }
 
 .logo:hover {
     color: #0a3d62;
 }
 
-.dropdown-menu {
-    background-color: #e74c3c;
-}
 
 .dropdown-item:hover {
     background-color: #0a3d62;
@@ -117,22 +122,46 @@ ul {
 }
 
 
-.espaciado{
-   margin-top: 6em;
+.espaciado {
+    margin-top: 9em;
 }
 
-.fondoCard{
-   background-color: rgba(10, 61, 98,0.1);
+.fondoCard {
+    background-color: rgba(10, 61, 98, 0.3);
 }
-.anchoCard{
+
+.anchoCard {
     width: 18rem;
 }
 
 
-.cuota{
+.cuota {
     background-color: white;
 }
-.cuota:hover{
-    background-color: rgba(231, 76, 60,0.1);
+
+.cuota:hover {
+    background-color: rgba(10, 61, 98, 0.3);
     cursor: pointer;
+}
+
+.fondoReto {
+    background-color: rgba(231, 76, 60, 0.8);
+}
+
+.fondoFecha {
+    background-color: rgba(231, 76, 60, 0.8);
+}
+
+.new {
+    color: rgba(231, 76, 60,1);
+    position: absolute;
+    margin-top: -20px;
+    left:81%;
+    z-index: 2;
+    font-size: 55px;
+}
+
+.new:hover{
+    color: #0a3d62;
+    font-size: 65px;
 }

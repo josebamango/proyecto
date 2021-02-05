@@ -8,7 +8,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-6">
-                    <form class="formulario" action="{{route('apuestas.update', $apuesta)}}" method="post" role="form" enctype="multipart/form-data">
+                    <form class="formulario" action="{{route('retos.update', $apuesta)}}" method="post" role="form" enctype="multipart/form-data">
                         <legend class="text-light bg-dark text-center h2">Introduce los datos del apuesta</legend>
 
                         @csrf

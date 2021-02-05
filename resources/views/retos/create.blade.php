@@ -1,14 +1,12 @@
 @extends('layouts.master')
 @section('titulo')
-    Crear
+    Retos
 @endsection
 
 @section("contenido")
-    <div class="row">
-        <div class="container">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center espaciado">
                 <div class="col-6">
-                    <form class="formulario" action="{{route('apuestas.store')}}" method="post" role="form">
+                    <form class="formulario" action="{{route('retos.store')}}" method="post" role="form">
                         <legend class="text-light bg-primary text-center h2">Introduce los datos del apuesta</legend>
                         @csrf
                         <label for="especie">Especie:</label>
@@ -54,8 +52,6 @@
 
 
             </div>
-        </div>
 
-    </div>
 @endsection
 

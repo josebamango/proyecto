@@ -2,19 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55666383-5145-4b96-94e3-492bf36b77c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/assets/css/estiloNav.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/jquery/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/scriptNav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_02_2021_21_38_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_02_2021_21_38__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/RetoController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Reto.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/RetoSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/imagenes/logoW.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/retos/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/retos/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ApuestaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ApuestaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_02_232620_create_apuestas_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_02_232620_create_apuestas_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/ApuestaSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ApuestaSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/InicioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/InicioController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/estilo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/estiloNav.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/estiloNav.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/apuestas/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/retos/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/apuestas/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/retos/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/apuestas/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/apuestas/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/partials/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/partials/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,18 +154,23 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layouts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/retos" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\proyecto\resources\views\retos" />
       <recent name="C:\xampp\htdocs\proyecto\resources\views\layouts" />
       <recent name="C:\xampp\htdocs\proyecto\resources\views" />
       <recent name="C:\xampp\htdocs\proyecto\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\proyecto\public\assets\imagenes" />
     </key>
   </component>
   <component name="RunManager">
@@ -179,7 +191,6 @@
       <workItem from="1612312219722" duration="331000" />
       <workItem from="1612384334895" duration="1586000" />
       <workItem from="1612392508182" duration="1143000" />
-      <workItem from="1612454710234" duration="8187000" />
     </task>
     <servers />
   </component>

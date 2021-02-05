@@ -10,7 +10,19 @@ class ApuestaController extends Controller
 
     public function index()
     {
-        $apuestas = Apuesta::orderBy('deporte', 'desc')->paginate();
+        $apuestas = Apuesta::query()->orderBy('fecha', 'desc')->get();
+        return view("apuestas.index", compact("apuestas"));
+    }
+
+    public function futbol()
+    {
+        $apuestas = Apuesta::query()->where('deporte', '=', 'futbol')->orderBy('fecha', 'desc')->paginate(5);
+        return view("apuestas.index", compact("apuestas"));
+    }
+
+    public function baloncesto()
+    {
+        $apuestas = Apuesta::query()->where('deporte', '=', 'baloncesto')->orderBy('fecha', 'desc')->paginate(5);
         return view("apuestas.index", compact("apuestas"));
     }
 
@@ -49,7 +61,7 @@ class ApuestaController extends Controller
 
     public function update(Request $a, int $id)
     {
-        $apuesta=Apuesta::find($id);
+        $apuesta = Apuesta::find($id);
         $apuesta->especie = $a->especie;
         $apuesta->peso = $a->peso;
         $apuesta->altura = $a->altura;
@@ -63,4 +75,6 @@ class ApuestaController extends Controller
 
         return redirect()->route('apuestas.index');
     }
+
+
 }
