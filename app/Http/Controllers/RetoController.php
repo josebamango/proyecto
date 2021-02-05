@@ -28,7 +28,7 @@ class RetoController extends Controller
     public function edit(int $id)
     {
         $reto = Reto::find($id);
-        return view("retos.edit", compact("retos"));
+        return view("retos.edit", compact("reto"));
     }
 
     public function store(Request $r)
@@ -47,7 +47,7 @@ class RetoController extends Controller
 
     public function update(Request $r, int $id)
     {
-        $reto=Reto::find($id);
+        $reto = Reto::find($id);
         $reto->nombre = $r->nombre;
         $reto->plazo = $r->plazo;
         $reto->descripcion = $r->descripcion;
@@ -55,6 +55,12 @@ class RetoController extends Controller
         $reto->objetivo = $r->objetivo;
         $reto->save();
 
+        return redirect()->route('retos.index');
+    }
+
+    public function destroy(int $id)
+    {
+        Reto::query()-> where("id", "=", $id)->delete();
         return redirect()->route('retos.index');
     }
 }

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
           integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
           crossorigin="anonymous"/>
-    <link rel="stylesheet" href="{{url("/assets/css/estiloNav.css")}}">
+    <link rel="stylesheet" href="{{url("/assets/css/estilo.css")}}">
     <link rel="shorcut icon" href="{{url("/assets/imagenes/logoW.png")}}">
     <title>@yield("titulo")</title>
 </head>
@@ -21,7 +21,7 @@
 <div class="container-fluid">
     @yield('contenido')
 </div>
-
+@include('layouts.partials.footer')
 </body>
 <!-- <script src="{{ url('/assets/bootstrap/js/bootstrap.min.js') }}"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"

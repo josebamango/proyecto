@@ -4,37 +4,61 @@
 @endsection
 
 @section("contenido")
-            <div class="row justify-content-center espaciado">
-                <div class="col-6">
-                    <form class="formulario" action="{{route('retos.store')}}" method="post" role="form">
-                        <legend class="text-center text-light titulo h2">Introduce los datos del reto</legend>
+    <div class="page-wrapper fondoCard p-t-100 p-b-50">
+        <div class="wrapper wrapper--w900">
+            <div class="card card-6">
+                <div class="card-heading">
+                    <h2 class="title">Nuevo reto</h2>
+                </div>
+                <div class="card-body">
+                    <form action="{{route('retos.store')}}" method="post" role="form">
                         @csrf
-                        <label for="nombre">Nombre:</label>
-                        <div class="form-group">
-                            <input class="form-control mb-3" type="text" name="nombre" placeholder="Nombre del reto">
+                        <div class="form-row">
+                            <div class="name">Nombre</div>
+                            <div class="value">
+                                <input class="input--style-6" type="text" name="nombre">
+                            </div>
                         </div>
-                        <label for="plazo">Plazo:</label>
-                        <div class="form-group">
-                            <input class="form-control d-inline mb-3" type="date" name="plazo">
+                        <div class="form-row">
+                            <div class="name">Plazo</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-6" type="date" name="plazo">
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="descripcion">Descripción:</label>
-                            <textarea name="descripcion" class="form-control mb-3" cols="30" rows="5"></textarea>
+                        <div class="form-row">
+                            <div class="name">Descripción</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <textarea class="textarea--style-6" name="descripcion"
+                                              placeholder="Marca tu meta"></textarea>
+                                </div>
+                            </div>
                         </div>
-                        <label for="inicio">Inicio:</label>
-                        <div class="form-group">
-                            <input class="form-control mb-3" type="number" name="inicio" placeholder="Cantidad inicial">
+                        <div class="form-row">
+                            <div class="name">Inicio</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-6" type="number" name="inicio">
+                                </div>
+                            </div>
                         </div>
-                        <label for="objetivo">Objetivo:</label>
-                        <div class="form-group">
-                            <input class="form-control mb-3" type="number" name="objetivo" placeholder="Objetivo a conseguir">
+                        <div class="form-row">
+                            <div class="name">Objetivo</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-6" type="number" name="objetivo">
+                                </div>
+                            </div>
                         </div>
-                        <input type="submit" name="crear" class="btn mt-3 text-light crear offset-5" value="Crear reto">
+                        <div class="card-footer">
+                            <button class="btn editar offset-5" type="submit" name="crear">Crear reto</button>
+                        </div>
                     </form>
                 </div>
-
-
             </div>
-
+        </div>
+    </div>
 @endsection
 
