@@ -2,26 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55666383-5145-4b96-94e3-492bf36b77c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_02_2021_21_38_[Default_Changelist]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_02_2021_21_38__Default_Changelist_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/RetoController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Reto.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/RetoSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/imagenes/logoW.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/retos/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/retos/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ApuestaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ApuestaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/InicioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/InicioController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RetoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RetoController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/css/estiloNav.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/estiloNav.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/apuestas/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/retos/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/apuestas/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/retos/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/apuestas/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/apuestas/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/partials/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/partials/navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/retos/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/retos/create.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,6 +176,14 @@
       <workItem from="1612384334895" duration="1586000" />
       <workItem from="1612392508182" duration="1143000" />
     </task>
+    <task id="LOCAL-00001" summary="Gran dia">
+      <created>1612485461999</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1612485461999</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,5 +200,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Gran dia" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gran dia" />
   </component>
 </project>

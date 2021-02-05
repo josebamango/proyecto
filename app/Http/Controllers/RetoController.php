@@ -10,7 +10,7 @@ class RetoController extends Controller
 
     public function index()
     {
-        $retos = Reto::orderBy('nombre', 'asc')->paginate(5);
+        $retos = Reto::orderBy('objetivo', 'asc')->paginate(5);
         return view("retos.index", compact("retos"));
     }
 
@@ -34,7 +34,7 @@ class RetoController extends Controller
     public function store(Request $r)
     {
 
-        $reto = new Apuesta();
+        $reto = new Reto();
         $reto->nombre = $r->nombre;
         $reto->plazo = $r->plazo;
         $reto->descripcion = $r->descripcion;
@@ -42,7 +42,7 @@ class RetoController extends Controller
         $reto->objetivo = $r->objetivo;
         $reto->save();
 
-        return redirect()->route('retos.show', $reto);
+        return redirect()->route('retos.index', $reto);
     }
 
     public function update(Request $r, int $id)

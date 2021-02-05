@@ -165,3 +165,12 @@ ul {
     color: #0a3d62;
     font-size: 65px;
 }
+
+.titulo{
+    background-color: rgba(10, 61, 98, 0.9);
+}
+
+.crear{
+    font-size: 20px;
+    background-color:rgba(10, 61, 98, 0.9);
+}
