@@ -126,7 +126,7 @@ ul {
 
 
 .espaciado {
-    margin-top: 9em;
+    margin-top: 13em;
 }
 
 .fondoCard {
@@ -157,16 +157,16 @@ ul {
 
 .new {
     color: rgba(231, 76, 60, 1);
-    position: fixed;
-    margin-top: -20px;
-    left: 85%;
-    top: 30%;
+    position: absolute;
+    left: 48%;
+    top: 13%;
     z-index: 2;
-    font-size: 55px;
+    font-size: 70px;
 }
 
 .new:hover {
-    color: #0a3d62;
+    color: #000000;
+    transform: scale(1.1);
 }
 
 .titulo {
@@ -257,7 +257,7 @@ h1, h2, h3, h4, h5, h6 {
   ESPACIADO
    ========================================================================== */
 .p-t-100 {
-    padding-top: 100px;
+    padding-top: 150px;
 }
 
 .p-t-130 {

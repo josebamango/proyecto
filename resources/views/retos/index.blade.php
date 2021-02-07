@@ -6,6 +6,7 @@
 
 @section("contenido")
     <div class="row justify-content-center espaciado">
+        <a class="nav-link active" href="{{route('retos.create')}}"><i class="fas fa-plus-circle fa-5x new"></i></a>
         @foreach( $retos as  $reto )
             <div class="col-8 mb-5">
                 <div class="card text-center">
@@ -15,7 +16,7 @@
                                 <a class="nav-link active" enlace href="#">{{$reto->objetivo}}€</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white  enlace" href="#">Progreso</a>
+                                <a class="nav-link text-white  enlace" href="{{route('retos.show', $reto->id)}}">Progreso</a>
                             </li>
                             <li class="nav-item">
                                 <form action="{{route('retos.destroy', $reto->id)}}" method="post">
@@ -35,7 +36,6 @@
                     </div>
                 </div>
             </div>
-        <a class="nav-link active" href="{{route('retos.create')}}"><i class="fas fa-plus-circle fa-5x new"></i></a>
         @endforeach
         {{ $retos->links() }}
 

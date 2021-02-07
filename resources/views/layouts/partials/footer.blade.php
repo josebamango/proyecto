@@ -15,7 +15,6 @@
                     <p><i class="fas fa-map-marker-alt"></i> Barrio el Pinto nº 17 San Pedro del Romeral</p>
                     <p><i class="fas fa-phone"></i> Teléfono: +34 638-348-186</p>
                     <p><i class="fas fa-envelope"></i> Email: <a href="mailto:wachete@gmail.com">wachete@gmail.com</a></p>
-                    <p><i class="fab fa-skype"></i> Skype: WacheteEnterprises</p>
                 </div>
                 <div class="col-md-4 col-lg-3 footer-social wow fadeInUp">
                     <h3>Síguenos</h3>

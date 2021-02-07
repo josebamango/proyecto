@@ -10,7 +10,7 @@ class RetoController extends Controller
 
     public function index()
     {
-        $retos = Reto::orderBy('objetivo', 'asc')->paginate(5);
+        $retos = Reto::orderBy('objetivo', 'desc')->paginate(5);
         return view("retos.index", compact("retos"));
     }
 
@@ -21,7 +21,7 @@ class RetoController extends Controller
 
     public function show(int $id)
     {
-        $reto = Reto::find($id);
+        $retos = Reto::find($id);
         return view("retos.show", compact("retos"));
     }
 
