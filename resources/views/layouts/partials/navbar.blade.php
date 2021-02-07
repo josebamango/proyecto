@@ -15,7 +15,8 @@
                 <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a href="{{route('apuestas.index')}}"
-                           class="nav-link {{ request()->routeIs('apuestas.index')? ' active' : ''}}">Todas las apuestas</a>
+                           class="nav-link {{ request()->routeIs('apuestas.index')? ' active' : ''}}">Todas las
+                            apuestas</a>
                     </li>
                     <li class="nav-item">
                         <a href="{{route('retos.index')}}"
@@ -28,7 +29,7 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="{{route('apuestas.futbol')}}"> <i
-                                    class="far fa-futbol mr-2"></i>Futbol</a>
+                                    class="fas fa-futbol mr-2"></i>Futbol</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="{{route('apuestas.baloncesto')}}"><i
                                     class="fas fa-basketball-ball mr-2"></i>Baloncesto</a>
