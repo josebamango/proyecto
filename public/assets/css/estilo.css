@@ -54,7 +54,6 @@ ul {
 }
 
 
-
 .navbar-toggler span {
     display: block;
     width: 22px;
@@ -118,7 +117,6 @@ ul {
 }
 
 
-
 .dropdown-item:hover {
     background-color: #0a3d62;
     color: white;
@@ -155,6 +153,10 @@ ul {
     background-color: rgba(231, 76, 60, 0.8);
 }
 
+.fas:hover {
+    color: #e74c3c;
+}
+
 .new {
     color: rgba(231, 76, 60, 1);
     position: absolute;
@@ -165,22 +167,18 @@ ul {
 }
 
 .new:hover {
-    color: #000000;
     transform: scale(1.1);
+    color: rgba(10, 61, 98, 0.9);
 }
 
 .titulo {
     background-color: rgba(10, 61, 98, 0.9);
 }
 
-.crear {
-    font-size: 20px;
-    background-color: rgba(10, 61, 98, 0.9);
-}
 
 .eliminar:hover {
     border: none;
-    background-color: #c86363;
+    background-color: rgba(10, 61, 98, 0.9);
 }
 
 .enlace {
@@ -517,17 +515,14 @@ textarea {
 
 }
 
-.fas:hover{
-    color: #e74c3c ;
-}
 
-
-.footer-top a{
-    color: white ;
+.footer-top a {
+    color: white;
     text-decoration: none;
 }
-.footer-top a:hover{
-    color: #e74c3c ;
+
+.footer-top a:hover {
+    color: #e74c3c;
 }
 
 .footer-top h3 {
@@ -541,7 +536,6 @@ textarea {
     margin-top: 0;
     margin-bottom: 18px;
 }
-
 
 
 .footer-contact p {
@@ -561,7 +555,6 @@ textarea {
     color: #777;
     border: 0;
 }
-
 
 
 .footer-social i {

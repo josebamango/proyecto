@@ -1,7 +1,6 @@
 <header class="header">
     <nav class="navbar navbar-expand-lg header-navbar fixed-top">
         <div class="container-fluid">
-
             <a class="navbar-brand logo" href="{{route('apuestas.index')}}"
                class="nav-link {{ request()->routeIs('wachete.*') && !request()->routeIs('wachete.create')? ' active' : ''}}">Wachete</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -10,7 +9,6 @@
                 <span></span>
                 <span></span>
             </button>
-
             <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
                     <li class="nav-item">
