@@ -8,6 +8,11 @@ use Carbon\Carbon;
 
 class Apuesta extends Model
 {
-    protected $table="apuestas";
+    protected $table = "apuestas";
     use HasFactory;
+
+    public function usuario()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

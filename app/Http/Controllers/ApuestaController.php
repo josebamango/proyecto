@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Apuesta;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class ApuestaController extends Controller
@@ -11,18 +12,19 @@ class ApuestaController extends Controller
     public function index()
     {
         $apuestas = Apuesta::query()->orderBy('fecha', 'desc')->get();
+        /*dd(User::query()->first()->apuestas);*/
         return view("apuestas.index", compact("apuestas"));
     }
 
     public function futbol()
     {
-        $apuestas = Apuesta::query()->where('deporte', '=', 'futbol')->orderBy('fecha', 'desc')->paginate(5);
+        $apuestas = Apuesta::query()->where('deporte', '=', 'futbol')->orderBy('fecha', 'desc')->get();
         return view("apuestas.index", compact("apuestas"));
     }
 
     public function baloncesto()
     {
-        $apuestas = Apuesta::query()->where('deporte', '=', 'baloncesto')->orderBy('fecha', 'desc')->paginate(5);
+        $apuestas = Apuesta::query()->where('deporte', '=', 'baloncesto')->orderBy('fecha', 'desc')->get();
         return view("apuestas.index", compact("apuestas"));
     }
 

@@ -164,6 +164,7 @@ ul {
     top: 13%;
     z-index: 2;
     font-size: 70px;
+    margin-bottom: 15px;
 }
 
 .new:hover {
@@ -171,15 +172,15 @@ ul {
     color: rgba(10, 61, 98, 0.9);
 }
 
-.titulo {
-    background-color: rgba(10, 61, 98, 0.9);
-}
-
-
 .eliminar:hover {
     border: none;
     background-color: rgba(10, 61, 98, 0.9);
 }
+
+.titulo {
+    background-color: rgba(10, 61, 98, 0.9);
+}
+
 
 .enlace {
     background-color: transparent;

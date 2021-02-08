@@ -15,6 +15,7 @@ class CreateApuestasTable extends Migration
     {
         Schema::create('apuestas', function (Blueprint $table) {
             $table->id();
+            $table->foreignId("usuario_id");
             $table->string("nombre", 50);
             $table->double("cuota_1");
             $table->double("cuota_x")->nullable();
@@ -26,6 +27,7 @@ class CreateApuestasTable extends Migration
             $table->boolean("estado")->nullable();
             $table->boolean("resultado")->nullable();
             $table->timestamps();
+            $table->foreign("usuario_id")->references("id")->on("users");
 
         });
     }

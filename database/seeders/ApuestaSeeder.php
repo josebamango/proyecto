@@ -15,6 +15,7 @@ class ApuestaSeeder extends Seeder
 
     private $apuestas = array(
         array(
+            'usuario_id' => "1",
             'nombre' => 'FB Barcelona - Real Madrid',
             'cuota_1' => 1.50,
             'cuota_x' => 3.00,
@@ -27,6 +28,7 @@ class ApuestaSeeder extends Seeder
             'resultado' => true,
         ),
         array(
+            'usuario_id' => "1",
             'nombre' => 'Brooklin Nets -LA Lakers',
             'cuota_1' => 2.80,
             'cuota_x' => 20.00,
@@ -39,6 +41,8 @@ class ApuestaSeeder extends Seeder
             'resultado' => true,
         ),
         array(
+
+            'usuario_id' => "2",
             'nombre' => 'Miami Heat - Milwaukee Bucks',
             'cuota_1' => 1.90,
             'cuota_x' => 20.00,
@@ -51,6 +55,7 @@ class ApuestaSeeder extends Seeder
             'resultado' => false,
         ),
         array(
+            'usuario_id' => "1",
             'nombre' => 'Almería FB - Atlético de Madrid',
             'cuota_1' => 4.50,
             'cuota_x' => 3.00,
@@ -63,6 +68,7 @@ class ApuestaSeeder extends Seeder
             'resultado' => true,
         ),
         array(
+            'usuario_id' => "1",
             'nombre' => 'Philadelphia 76ers - Boston Celtics',
             'cuota_1' => 2.10,
             'cuota_x' => 20.00,
@@ -75,6 +81,7 @@ class ApuestaSeeder extends Seeder
             'resultado' => true,
         ),
         array(
+            'usuario_id' => "1",
             'nombre' => 'Sporting de Gijón - RCD Espanyol',
             'cuota_1' => 3.10,
             'cuota_x' => 5.00,
@@ -87,6 +94,7 @@ class ApuestaSeeder extends Seeder
             'resultado' => true,
         ),
         array(
+            'usuario_id' => "2",
             'nombre' => 'Dallas Mavericks - LA Clippers',
             'cuota_1' => 2.40,
             'cuota_x' => 20.00,
@@ -99,10 +107,12 @@ class ApuestaSeeder extends Seeder
             'resultado' => false,
         ),
     );
+
     public function run()
     {
         foreach ($this->apuestas as $apuesta) {
             $a = new Apuesta();
+            $a->usuario_id = $apuesta['usuario_id'];
             $a->nombre = $apuesta['nombre'];
             $a->cuota_1 = $apuesta['cuota_1'];
             $a->cuota_x = $apuesta['cuota_x'];

@@ -31,6 +31,7 @@ class RetoSeeder extends Seeder
             'objetivo' => 1200,
         ),
     );
+
     public function run()
     {
         foreach ($this->retos as $reto) {
@@ -44,4 +45,6 @@ class RetoSeeder extends Seeder
         }
         $this->command->info('Tabla retos inicializada con datos');
     }
+
+
 }
