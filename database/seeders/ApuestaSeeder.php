@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Reto;
 use Illuminate\Database\Seeder;
 use App\Models\Apuesta;
 
@@ -126,6 +127,17 @@ class ApuestaSeeder extends Seeder
             $a->save();
         }
         $this->command->info('Tabla apuestas inicializada con datos');
+
+        $apuestas = Apuesta::all();
+        foreach($apuestas as $apuesta)
+        {
+            $apuesta->retos()->attach([
+                Reto::all()->skip(0)->take(6)->random()->id,
+                Reto::all()->skip(6)->take(7)->random()->id,
+            ]);
+        }
     }
+
+
 
 }

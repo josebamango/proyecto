@@ -15,11 +15,13 @@ class CreateRetosTable extends Migration
     {
         Schema::create('retos', function (Blueprint $table) {
             $table->id();
+            $table->foreignId("user_id");
             $table->string("nombre", 50);
             $table->date("plazo");
             $table->text("descripcion")->nullable();
             $table->double("inicio");
             $table->double("objetivo");
+            $table->foreign("user_id")->references("id")->on("users");
             $table->timestamps();
         });
     }

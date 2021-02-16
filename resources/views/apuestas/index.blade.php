@@ -14,6 +14,7 @@
                             <h3 class="card-title p-2">{{$apuesta->deporte}}</h3>
                             <h5 class="card-title p-2">{{$apuesta->nombre}}</h5>
                             <h5 class="card-title p-2">{{$apuesta->usuario->name}}</h5>
+                            <h5 class="card-title p-2">{{$apuesta->retos->nombre}}</h5>
                         </div>
                         <div class="card-body mr-1 ml-2 cuota">
                             <h5 class="text-muted text-center mt-4">1</h5>

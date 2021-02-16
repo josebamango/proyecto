@@ -15,4 +15,9 @@ class Apuesta extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function retos()
+    {
+        return $this->belongsToMany(Reto::class);
+    }
 }

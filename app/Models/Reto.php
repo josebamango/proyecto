@@ -10,4 +10,18 @@ class Reto extends Model
 {
     protected $table="retos";
     use HasFactory;
+
+
+    public function usuario()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    
+    public function apuesta()
+    {
+        return $this->belongsToMany(Apuesta::class);
+    }
+
+
 }

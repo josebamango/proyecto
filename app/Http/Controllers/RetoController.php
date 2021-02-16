@@ -10,7 +10,7 @@ class RetoController extends Controller
 
     public function index()
     {
-        $retos = Reto::orderBy('objetivo', 'desc')->paginate(5);
+        $retos = Reto::orderBy('objetivo', 'desc')->get();
         return view("retos.index", compact("retos"));
     }
 

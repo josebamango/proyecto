@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Reto;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class RetoFactory extends Factory
@@ -23,6 +24,7 @@ class RetoFactory extends Factory
     {
         return [
             "nombre" => $this->faker->word,
+            "user_id"=>User::all()->random()->id,
             "plazo" => $this->faker->date(),
             "descripcion" => $this->faker->text(),
             "inicio" => $this->faker->numberBetween(1, 1000),

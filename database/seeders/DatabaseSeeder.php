@@ -21,11 +21,9 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         User::factory(2)->create();
-        DB::table('apuestas')->delete();
-        $this->call(ApuestaSeeder::class);
-        DB::table('retos')->delete();
         $this->call(RetoSeeder::class);
         Reto::factory(10)->create();
+        $this->call(ApuestaSeeder::class);
         Apuesta::factory(20)->create();
 
     }
