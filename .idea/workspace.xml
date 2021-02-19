@@ -5,23 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55666383-5145-4b96-94e3-492bf36b77c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_16_165224_create_apuesta_reto_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_02_2021_21_38_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_02_2021_21_38__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RetoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RetoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ApuestaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ApuestaController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Apuesta.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Apuesta.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Reto.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Reto.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/RetoFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/RetoFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_02_232620_create_apuestas_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_16_115224_create_apuestas_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_02_232740_create_retos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_02_232740_create_retos_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/ApuestaSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ApuestaSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/RetoSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/RetoSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/estilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/estilo.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/apuestas/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/apuestas/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/retos/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/retos/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

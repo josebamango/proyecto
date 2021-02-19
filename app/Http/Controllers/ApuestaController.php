@@ -11,7 +11,8 @@ class ApuestaController extends Controller
 
     public function index()
     {
-        $apuestas = Apuesta::query()->orderBy('fecha', 'desc')->get();
+        $apuestas = Apuesta::orderBy('fecha', 'desc')->get();
+        return $apuestas;
         /*dd(User::query()->first()->apuestas);*/
         return view("apuestas.index", compact("apuestas"));
     }
@@ -39,7 +40,7 @@ class ApuestaController extends Controller
         return view("apuestas.show", compact("apuesta"));
     }
 
-    public function edit(int $id)
+   /* public function edit(int $id)
     {
         $apuesta = Apuesta::find($id);
         return view("apuestas.edit", compact("apuesta"));
@@ -76,7 +77,7 @@ class ApuestaController extends Controller
         $apuesta->save();
 
         return redirect()->route('apuestas.index');
-    }
+    }*/
 
 
 }
